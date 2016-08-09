@@ -1,8 +1,8 @@
 
 [submodule "contrib"]
-	path = contrib
+	path = Kube/contrib
 	url = https://github.com/kubernetes/contrib.git
 
 [submodule "kubernetes"]
-	path = kubernetes
+	path = Kube/kubernetes
 	url = https://github.com/kubernetes/kubernetes.git
