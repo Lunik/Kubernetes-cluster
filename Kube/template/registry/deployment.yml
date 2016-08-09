@@ -1,0 +1,27 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: dc-registry
+  labels:
+    app: registry
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: registry
+      labels:
+        app: registry
+    spec:
+      containers:
+      - name: registry
+        image: registry:2
+        ports:
+        - containerPort: 5000
+        volumeMounts:
+        - name: registry-volume
+          mountPath: /var/lib/registry
+      volumes:
+      - name: registry-volume
+        nfs:
+          server: kube-master
+          path: /mnt/registry
