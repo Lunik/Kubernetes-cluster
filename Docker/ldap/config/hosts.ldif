@@ -1,0 +1,50 @@
+dn: cn=localhost,ou=Hosts,dc=exemple,dc=fr
+objectClass: top
+objectClass: ipHost
+objectClass: device
+ipHostNumber: 127.0.0.1
+cn: localhost
+
+dn: cn=localhost,ou=Hosts,dc=exemple,dc=fr
+objectClass: top
+objectClass: ipHost
+objectClass: device
+ipHostNumber: ::1
+cn: localhost
+cn: ip6-localhost
+cn: ip6-loopback
+
+dn: cn=ip6-localnet,ou=Hosts,dc=exemple,dc=fr
+objectClass: top
+objectClass: ipHost
+objectClass: device
+ipHostNumber: fe00::0
+cn: ip6-localnet
+
+dn: cn=ip6-mcastprefix,ou=Hosts,dc=exemple,dc=fr
+objectClass: top
+objectClass: ipHost
+objectClass: device
+ipHostNumber: ff00::0
+cn: ip6-mcastprefix
+
+dn: cn=ip6-allnodes,ou=Hosts,dc=exemple,dc=fr
+objectClass: top
+objectClass: ipHost
+objectClass: device
+ipHostNumber: ff02::1
+cn: ip6-allnodes
+
+dn: cn=ip6-allrouters,ou=Hosts,dc=exemple,dc=fr
+objectClass: top
+objectClass: ipHost
+objectClass: device
+ipHostNumber: ff02::2
+cn: ip6-allrouters
+
+dn: cn=b921b5db385c,ou=Hosts,dc=exemple,dc=fr
+objectClass: top
+objectClass: ipHost
+objectClass: device
+ipHostNumber: 172.18.0.2
+cn: b921b5db385c

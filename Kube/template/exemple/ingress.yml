@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ing-site1
+  labels:
+    # Nom de mon application
+    app: site-site1
+spec:
+  rules:
+    #Quand on reçoit une requet sur cet adresse
+  - host: site1.exemple.fr
+    http:
+      paths:
+      - backend:
+          # On redirige les requetes sur ce service
+          serviceName: svc-site1
+          servicePort: 80

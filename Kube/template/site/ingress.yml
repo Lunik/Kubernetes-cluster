@@ -1,14 +1,14 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: ing-site-${NAME}
+  name: ing-site-{{NAME}}
   labels:
-    app: site-${NAME}
+    app: site-{{NAME}}
 spec:
   rules:
-  - host: ${NAME}.exemple.fr
+  - host: {{NAME}}.exemple.fr
     http:
       paths:
       - backend:
-          serviceName: svc-site-${NAME}
+          serviceName: svc-site-{{NAME}}
           servicePort: 80

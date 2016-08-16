@@ -1,0 +1,90 @@
+dn: dc=exemple,dc=fr
+dc: exemple
+objectClass: top
+objectClass: domain
+objectClass: domainRelatedObject
+associatedDomain: exemple.fr
+
+dn: ou=Hosts,dc=exemple,dc=fr
+ou: Hosts
+objectClass: top
+objectClass: organizationalUnit
+objectClass: domainRelatedObject
+associatedDomain: exemple.fr
+
+dn: ou=Rpc,dc=exemple,dc=fr
+ou: Rpc
+objectClass: top
+objectClass: organizationalUnit
+objectClass: domainRelatedObject
+associatedDomain: exemple.fr
+
+dn: ou=Services,dc=exemple,dc=fr
+ou: Services
+objectClass: top
+objectClass: organizationalUnit
+objectClass: domainRelatedObject
+associatedDomain: exemple.fr
+
+dn: nisMapName=netgroup.byuser,dc=exemple,dc=fr
+nismapname: netgroup.byuser
+objectClass: top
+objectClass: nisMap
+objectClass: domainRelatedObject
+associatedDomain: exemple.fr
+
+dn: ou=Mounts,dc=exemple,dc=fr
+ou: Mounts
+objectClass: top
+objectClass: organizationalUnit
+objectClass: domainRelatedObject
+associatedDomain: exemple.fr
+
+dn: ou=Networks,dc=exemple,dc=fr
+ou: Networks
+objectClass: top
+objectClass: organizationalUnit
+objectClass: domainRelatedObject
+associatedDomain: exemple.fr
+
+dn: ou=People,dc=exemple,dc=fr
+ou: People
+objectClass: top
+objectClass: organizationalUnit
+objectClass: domainRelatedObject
+associatedDomain: exemple.fr
+
+dn: ou=Group,dc=exemple,dc=fr
+ou: Group
+objectClass: top
+objectClass: organizationalUnit
+objectClass: domainRelatedObject
+associatedDomain: exemple.fr
+
+dn: ou=Netgroup,dc=exemple,dc=fr
+ou: Netgroup
+objectClass: top
+objectClass: organizationalUnit
+objectClass: domainRelatedObject
+associatedDomain: exemple.fr
+
+dn: ou=Protocols,dc=exemple,dc=fr
+ou: Protocols
+objectClass: top
+objectClass: organizationalUnit
+objectClass: domainRelatedObject
+associatedDomain: exemple.fr
+
+dn: ou=Aliases,dc=exemple,dc=fr
+ou: Aliases
+objectClass: top
+objectClass: organizationalUnit
+objectClass: domainRelatedObject
+associatedDomain: exemple.fr
+
+dn: nisMapName=netgroup.byhost,dc=exemple,dc=fr
+nismapname: netgroup.byhost
+objectClass: top
+objectClass: nisMap
+objectClass: domainRelatedObject
+associatedDomain: exemple.fr

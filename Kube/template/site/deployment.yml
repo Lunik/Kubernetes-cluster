@@ -1,27 +1,33 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: dc-site-${NAME}
+  name: dc-site-{{NAME}}
   labels:
-    app: site-${NAME}
+    app: site-{{NAME}}
 spec:
   replicas: 1
   template:
     metadata:
-      name: site-${NAME}
+      name: site-{{NAME}}
       labels:
-        app: site-${NAME}
+        app: site-{{NAME}}
     spec:
       containers:
-      - name: php-fpm-site-${NAME}
-        image: kube-master:5000/php-fpm
+      - name: php-fpm-site-{{NAME}}
+        image: kube-master:5000/php-fpm:latest
+        env:
+        - name: "UID"
+          value: "{{UID}}"
         ports:
         - containerPort: 9000
         volumeMounts:
         - name: html-volume
           mountPath: /scripts
-      - name: nginx-site-${NAME}
-        image: kube-master:5000/nginx
+      - name: nginx-site-{{NAME}}
+        image: kube-master:5000/nginx:latest
+        env:
+        - name: "UID"
+          value: "{{UID}}"
         ports:
           - containerPort: 80
         volumeMounts:
@@ -31,4 +37,4 @@ spec:
       - name: html-volume
         nfs:
           server: kube-master
-          path: /sites/${NAME}/
+          path: /sites/{{NAME}}/

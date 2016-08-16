@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Service
+metadata:
+  # Nom de mon service
+  name: svc-site1
+  labels:
+    # Nom de mon application
+    app: site-site1
+spec:
+  ports:
+  # Liste des ports qu'il va desservir
+  - name: web
+    # Port d'entré de l'extérieur vers l'application
+    port: 80
+    protocol: TCP
+    # Port exposé par les pods de l'application
+    targetPort: 80
+  selector:
+    # Nom de l'application à desservir
+    app: site-site1
+  type: ClusterIP

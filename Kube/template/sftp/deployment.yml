@@ -1,0 +1,32 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: dc-sftp
+  labels:
+    app: sftp
+spec:
+  replicas: 2
+  template:
+    metadata:
+      name: sftp
+      labels:
+        app: sftp
+    spec:
+      containers:
+      - name: sftp
+        image: kube-master:5000/sftp
+        ports:
+        - containerPort: 22
+        volumeMounts:
+        - name: html-volume
+          mountPath: /sites
+        env:
+          - name: USER
+            value: "foo"
+          - name: PASS
+            value: "bar"
+      volumes:
+      - name: html-volume
+        nfs:
+          server: kube-master
+          path: /sites

@@ -1,0 +1,27 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: dc-ldap
+  labels:
+    app: ldap
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: ldap
+      labels:
+        app: ldap
+    spec:
+      containers:
+      - name: ldap
+        image: kube-master:5000/ldap
+        ports:
+        - containerPort: 389
+        volumeMounts:
+        - name: data-volume
+          mountPath: /var/lib/openldap-data
+      volumes:
+      - name: data-volume
+        nfs:
+          server: kube-master
+          path: /openldap-data

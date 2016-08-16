@@ -1,0 +1,216 @@
+dn: cn=root,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: root
+userPassword: {crypt}x
+gidNumber: 0
+
+dn: cn=bin,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: bin
+userPassword: {crypt}x
+gidNumber: 1
+
+dn: cn=daemon,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: daemon
+userPassword: {crypt}x
+gidNumber: 2
+
+dn: cn=sys,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: sys
+userPassword: {crypt}x
+gidNumber: 3
+
+dn: cn=adm,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: adm
+userPassword: {crypt}x
+gidNumber: 4
+
+dn: cn=tty,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: tty
+userPassword: {crypt}x
+gidNumber: 5
+
+dn: cn=disk,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: disk
+userPassword: {crypt}x
+gidNumber: 6
+
+dn: cn=lp,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: lp
+userPassword: {crypt}x
+gidNumber: 7
+
+dn: cn=mem,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: mem
+userPassword: {crypt}x
+gidNumber: 8
+
+dn: cn=kmem,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: kmem
+userPassword: {crypt}x
+gidNumber: 9
+
+dn: cn=wheel,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: wheel
+userPassword: {crypt}x
+gidNumber: 10
+
+dn: cn=cdrom,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: cdrom
+userPassword: {crypt}x
+gidNumber: 11
+
+dn: cn=mail,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: mail
+userPassword: {crypt}x
+gidNumber: 12
+
+dn: cn=man,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: man
+userPassword: {crypt}x
+gidNumber: 15
+
+dn: cn=dialout,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: dialout
+userPassword: {crypt}x
+gidNumber: 18
+
+dn: cn=floppy,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: floppy
+userPassword: {crypt}x
+gidNumber: 19
+
+dn: cn=games,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: games
+userPassword: {crypt}x
+gidNumber: 20
+
+dn: cn=tape,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: tape
+userPassword: {crypt}x
+gidNumber: 30
+
+dn: cn=video,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: video
+userPassword: {crypt}x
+gidNumber: 39
+
+dn: cn=ftp,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: ftp
+userPassword: {crypt}x
+gidNumber: 50
+
+dn: cn=lock,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: lock
+userPassword: {crypt}x
+gidNumber: 54
+
+dn: cn=audio,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: audio
+userPassword: {crypt}x
+gidNumber: 63
+
+dn: cn=nobody,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: nobody
+userPassword: {crypt}x
+gidNumber: 99
+
+dn: cn=users,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: users
+userPassword: {crypt}x
+gidNumber: 100
+
+dn: cn=utmp,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: utmp
+userPassword: {crypt}x
+gidNumber: 22
+
+dn: cn=utempter,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: utempter
+userPassword: {crypt}x
+gidNumber: 35
+
+dn: cn=input,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: input
+userPassword: {crypt}x
+gidNumber: 999
+
+dn: cn=systemd-journal,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: systemd-journal
+userPassword: {crypt}x
+gidNumber: 190
+
+dn: cn=systemd-bus-proxy,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: systemd-bus-proxy
+userPassword: {crypt}x
+gidNumber: 998
+
+dn: cn=systemd-network,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: systemd-network
+userPassword: {crypt}x
+gidNumber: 997
+
+dn: cn=dbus,ou=Group,dc=exemple,dc=fr
+objectClass: posixGroup
+objectClass: top
+cn: dbus
+userPassword: {crypt}x
+gidNumber: 81

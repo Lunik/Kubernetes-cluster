@@ -1,0 +1,19 @@
+dn: uid={{USER}},ou=People,dc=exemple,dc=fr
+uid: {{USER}}
+cn: Linux User
+givenName: Linux
+sn: User
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+userPassword: 
+shadowLastChange: 17017
+shadowMax: 99999
+shadowWarning: 7
+uidNumber: {{UID}}
+gidNumber: {{UID}}
+homeDirectory: /sites/{{USER}}
+gecos: Linux User,,,

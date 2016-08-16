@@ -1,0 +1,31 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {{MODE}}-site-{{NAME}}
+spec:
+  template:
+    metadata:
+      name: {{MODE}}-site-{{NAME}}
+    spec:
+      containers:
+      - name: {{MODE}}-site-{{NAME}}
+        image: kube-master:5000/create-site
+        command: ["/setup", "{{MODE}}"]
+        env:
+        - name: "LDAP_USER"
+          value: "Manager"
+        - name: "LDAP_PASS"
+          value: "root"
+        - name: "USER"
+          value: "{{USER}}"
+        - name: "PASS"
+          value: "{{PASS}}"
+        volumeMounts:
+        - name: html-volume
+          mountPath: /sites
+      restartPolicy: Never
+      volumes:
+      - name: html-volume
+        nfs:
+          server: kube-master
+          path: /sites

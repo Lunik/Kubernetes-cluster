@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: svc-site-${NAME}
+  name: svc-site-{{NAME}}
   labels:
-    app: site-${NAME}
+    app: site-{{NAME}}
 spec:
   ports:
   - name: web
@@ -11,5 +11,5 @@ spec:
     protocol: TCP
     targetPort: 80
   selector:
-    app: site-${NAME}
+    app: site-{{NAME}}
   type: ClusterIP
