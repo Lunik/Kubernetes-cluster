@@ -4,9 +4,9 @@ metadata:
   name: {{MODE}}-site-{{NAME}}
 spec:
   template:
-    metadata:
-      name: {{MODE}}-site-{{NAME}}
     spec:
+      metadata:
+        name: {{MODE}}-site-{{NAME}}
       containers:
       - name: {{MODE}}-site-{{NAME}}
         image: kube-master:5000/create-site

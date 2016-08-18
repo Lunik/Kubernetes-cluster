@@ -1,1 +1,0 @@
-# All custom Docker images for the kubernetes cluster

@@ -33,10 +33,10 @@ echo "==> Templating du job."
 
 echo "---" > job.yml
 cat create_site_job.yml >> job.yml
-sed -e 's/{{MODE}}/'$mode'/' job.yml -i
-sed -e 's/{{USER}}/'$user'/' job.yml -i
-sed -e 's/{{PASS}}/'$pass'/' job.yml -i
-sed -e 's/{{NAME}}/'$site'/g' job.yml -i
+sed -e -i 's/{{MODE}}/'$mode'/' job.yml
+sed -e -i 's/{{USER}}/'$user'/' job.yml
+sed -e -i 's/{{PASS}}/'$pass'/' job.yml
+sed -e -i 's/{{NAME}}/'$site'/g' job.yml
 
 echo "==> Creation du job."
 kubectl create -f job.yml
@@ -76,8 +76,8 @@ cat ../site/ingress.yml >> site.yml
 echo "---" >> site.yml
 cat ../site/service.yml >> site.yml
 
-sed -e 's/{{NAME}}/'$site'/g' site.yml -i
-sed -e 's/{{UID}}/'$uid'/g' site.yml -i
+sed -e -i 's/{{NAME}}/'$site'/g' site.yml
+sed -e -i 's/{{UID}}/'$uid'/g' site.yml
 
 if [ $mode = "create" ]
 then
@@ -100,6 +100,6 @@ then
 	echo "  User:	$user"
 	echo "  Pass:	$pass"
 	echo "  Uid:	$uid"
-	echo "  Url:	$site.exemple.fr"
+	echo "  Url:	$site.ccsite.exemple.fr"
 fi
 exit 0

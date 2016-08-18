@@ -7,11 +7,11 @@ metadata:
 spec:
   replicas: 2
   template:
-    metadata:
-      name: sftp
-      labels:
-        app: sftp
     spec:
+      metadata:
+        name: sftp
+        labels:
+          app: sftp
       containers:
       - name: sftp
         image: kube-master:5000/sftp

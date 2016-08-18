@@ -7,11 +7,11 @@ metadata:
 spec:
   replicas: 2
   template:
-    metadata:
-      name: site-site1
-      labels:
-        app: site-site1
     spec:
+      metadata:
+        name: site-site1
+        labels:
+          app: site-site1
       containers:
       - name: php-fpm-site1
         image: kube-master:5000/php-fpm

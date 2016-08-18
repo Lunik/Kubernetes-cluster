@@ -1,7 +1,7 @@
 # ALPINE
 
 #FROM alpine:latest
-#MAINTAINER Guillaume Martinez <guillaume.lunik@gmail.com>
+#MAINTAINER Guillaume Martinez <guillaume.martinez@cc.exemple.fr>
 
 #RUN apk --update --no-cache add openssh
 
@@ -21,11 +21,12 @@
 
 FROM centos:centos7
 
-MAINTAINER Guillaume Martinez <guillaume.lunik@gmail.com>
+MAINTAINER Guillaume Martinez <guillaume.martinez@cc.exemple.fr>
 
 RUN yum -y install epel-release && \
 	yum -y install \
 	openssh-server \
+	rsync \
 	nss-pam-ldapd && \
 	yum clean all
 

@@ -1,5 +1,5 @@
 FROM alpine:latest
-MAINTAINER Guillaume Martinez <guillaume.lunik@gmail.com>
+MAINTAINER Guillaume Martinez <guillaume.martinez@cc.exemple.fr>
 
 RUN apk --update --no-cache add haproxy
 
