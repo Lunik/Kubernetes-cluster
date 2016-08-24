@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-MAINTAINER Guillaume Martinez <guillaume.martinez@cc.exemple.fr>
+MAINTAINER Guillaume Martinez <guillaume.lunik@gmail.com>
 
 RUN apk --update add openldap-clients
 

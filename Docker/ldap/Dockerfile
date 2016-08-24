@@ -1,7 +1,9 @@
 FROM alpine:latest
-MAINTAINER Guillaume Martinez <guillaume.martinez@cc.exemple.fr>
+MAINTAINER Guillaume Martinez <guillaume.lunik@gmail.com>
 
-RUN apk --update --no-cache add openldap
+RUN apk --update --no-cache add \
+	openldap \
+	openldap-clients
 
 ADD config/slapd.conf /etc/openldap/slapd.conf
 

@@ -90,4 +90,4 @@ UsePAM yes
 Match user *
      X11Forwarding no
      AllowTcpForwarding no
-     ForceCommand internal-sftp
+     ForceCommand /exec
